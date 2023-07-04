@@ -39,7 +39,7 @@
 <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 py-4">
   <% if(categories!="") {%>
     <% categories.forEach(function (category,index) {%>
-  <a href="/categories<%- category.name%>" class="col text-center category__link">
+  <a href="/categories/<%- category._id%>" class="col text-center category__link">
     <div class="category__img shadow">
       <img src="image/<%- category.image %>" alt="<%- category.name%>" loading="lazy" />
     </div>
@@ -65,39 +65,97 @@ Latest-start -->
     <a href="/explore-latest" class="ms-auto">View More</a>
   </div>
   <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-    <a href="/recipe/#" class="col text-center category__link">
+
+    <%if (food!= "") {%>
+      <%food.latest.forEach(function (recipe,index){%>
+    <a href="/recipe/<%=recipe._id%>" class="col text-center category__link">
       <div class="category__img category__img--large shadow">
-        <img src="image/ChocolateCake.jpg" alt="ChocolateCake" loading="lazy" />
+        <img src="uploads/<%=recipe.image%>" alt="<%= recipe.name%>" loading="lazy" />
       </div>
-      <div class="pt-1">ChocolateCake</div>
+      <div class="pt-1"><%= recipe.name%></div>
     </a>
-    <a href="/recipe/#" class="col text-center category__link">
-      <div class="category__img category__img--large shadow">
-        <img src="image/ChocolateCake.jpg" alt="ChocolateCake" loading="lazy" />
-      </div>
-      <div class="pt-1">ChocolateCake</div>
-    </a>
-    <a href="/recipe/#" class="col text-center category__link">
-      <div class="category__img category__img--large shadow">
-        <img src="image/ChocolateCake.jpg" alt="ChocolateCake" loading="lazy" />
-      </div>
-      <div class="pt-1">ChocolateCake</div>
-    </a>
-    <a href="/recipe/#" class="col text-center category__link">
-      <div class="category__img category__img--large shadow">
-        <img src="image/ChocolateCake.jpg" alt="ChocolateCake" loading="lazy" />
-      </div>
-      <div class="pt-1">ChocolateCake</div>
-    </a>
-    <a href="/recipe/#" class="col text-center category__link">
-      <div class="category__img category__img--large shadow">
-        <img src="image/ChocolateCake.jpg" alt="ChocolateCake" loading="lazy" />
-      </div>
-      <div class="pt-1">ChocolateCake</div>
-    </a>
+  <%})%>
+   <% }%>
+
   </div>
 </section>
+
 <!-- Latest-end -->
+
+<!-- American recipe -->
+
+<section class="pb-4 pt-4">
+  <div class="d-flex mb-2 align-items-center">
+    <h2>American Recipes</h2>
+    <a href="/explore-latest" class="ms-auto">View More</a>
+  </div>
+  <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+
+    <%if (food!= "") {%>
+      <%food.american.forEach(function (recipe,index){%>
+    <a href="/recipe/<%=recipe._id%>" class="col text-center category__link">
+      <div class="category__img category__img--large shadow">
+        <img src="uploads/<%=recipe.image%>" alt="<%= recipe.name%>" loading="lazy" />
+      </div>
+      <div class="pt-1"><%= recipe.name%></div>
+    </a>
+  <%})%>
+   <% }%>
+
+  </div>
+</section>
+
+<!-- Nepalese recipe -->
+
+<section class="pb-4 pt-4">
+  <div class="d-flex mb-2 align-items-center">
+    <h2>Nepalese Recipes</h2>
+    <a href="/explore-latest" class="ms-auto">View More</a>
+  </div>
+  <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+
+    <%if (food!= "") {%>
+      <%food.nepalese.forEach(function (recipe,index){%>
+    <a href="/recipe/<%=recipe._id%>" class="col text-center category__link">
+      <div class="category__img category__img--large shadow">
+        <img src="uploads/<%=recipe.image%>" alt="<%= recipe.name%>" loading="lazy" />
+      </div>
+      <div class="pt-1"><%= recipe.name%></div>
+    </a>
+  <%})%>
+   <% }%>
+
+  </div>
+</section>
+
+<!-- Chinese recipe -->
+
+
+<section class="pb-4 pt-4">
+  <div class="d-flex mb-2 align-items-center">
+    <h2>Chinese Recipes</h2>
+    <a href="/explore-latest" class="ms-auto">View More</a>
+  </div>
+  <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+
+    <%if (food!= "") {%>
+      <%food.chinese.forEach(function (recipe,index){%>
+    <a href="/recipe/<%=recipe._id%>" class="col text-center category__link">
+      <div class="category__img category__img--large shadow">
+        <img src="uploads/<%=recipe.image%>" alt="<%= recipe.name%>" loading="lazy" />
+      </div>
+      <div class="pt-1"><%= recipe.name%></div>
+    </a>
+  <%})%>
+   <% } else{%>
+   
+    <p>No item found</p>
+
+   <%}%>
+
+  </div>
+</section>
+
 
 
 <!-- submit-start// add to recipe section -->
