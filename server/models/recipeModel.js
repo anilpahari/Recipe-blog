@@ -15,7 +15,15 @@ const recipeSchema = new mongoose.Schema({
   },
   category: {
     type: String,
-    enum: ["American", "Nepalese", "Indian", "Mexican", "Thai's", "Chinese"],
+    enum: [
+      "American",
+      "Nepalese",
+      "Indian",
+      "Mexican",
+      "Thai's",
+      "Chinese",
+      "Other's",
+    ],
     required: [true, "Please enter name"],
   },
 
@@ -24,5 +32,6 @@ const recipeSchema = new mongoose.Schema({
     require: [true, "Please upload an image"],
   },
 });
+recipeSchema.index({ name: "text", description: "text" });
 const recipeModel = mongoose.model("recipe", recipeSchema);
 module.exports = recipeModel;
