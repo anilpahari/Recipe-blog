@@ -16,6 +16,7 @@ const postRecipe = async (req, res) => {
       imageUplodeFile.mv(uploadPath, function (err) {
         if (err) {
           console.log("Failed to insert image", err);
+          return res.status(500).json({ error: "Failed to upload image" });
         }
       });
     }
