@@ -1,4 +1,4 @@
-<div class="px-4 py-5 my-5 text-center">
+<div class="px-4 py-4 my-4 text-center">
   <h1 class="display-5 fw-bold">Submit Your recipe</h1>
   <div class="col-lg-6 mx-auto">
     <p>
@@ -7,13 +7,27 @@
     </p>
   </div>
 </div>
+
 <div class="row justify-content-center">
+  <% if (successMsg != ""){%>
+  <div class="alert col-8 alert-secondary" role="alert"><%=successMsg%></div>
+  <%}%> <% if (errMsg != ""){%>
+  <div class="alert col-8 alert-danger" role="alert">
+    <%=errMsg[0].message%>
+  </div>
+  <%}%>
   <div class="col-8">
     <form action="/submit-recipe" enctype="multipart/form-data" method="post">
       <div class="row g-3">
         <div class="col-12">
           <label for="name" class="form-label">Recipe name</label>
-          <input type="text" name="name" id="name" class="form-control" />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            required
+          />
         </div>
         <div class="col-12">
           <label for="name" class="form-label">Description</label>
@@ -35,7 +49,11 @@
           </div>
         </div>
         <div class="col-12">
-          <button type="button" class="btn btn-outline-primary">
+          <button
+            type="button"
+            class="btn btn-outline-primary"
+            id="addIngredientsBtn"
+          >
             + Ingredients
           </button>
         </div>
@@ -54,6 +72,8 @@
             <option value="Nepalese">Nepalese</option>
             <option value="Mexican">Mexican</option>
             <option value="Indian">Indian</option>
+            <option value="Indian">Korean</option>
+            <option value="Indian">Spanish</option>
             <option value="Other's">Other's</option>
           </select>
         </div>

@@ -1,0 +1,52 @@
+<div class="px-2 py-2 my-2 text-center">
+  <h1 class="display-5 fw-bold">Contact me</h1>
+  <div class="col-lg-4 mx-auto">
+    <p>
+      If you have any query or suggestion you can contact me.<br />
+      Fill our form to get started.
+    </p>
+  </div>
+</div>
+<div class="row justify-content-center">
+  <div class="col-8">
+    <form action="/contact" method="post" id="contactForm">
+      <div class="row g-3">
+        <div class="col-12">
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="col-12">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="col-12">
+          <label for="name" class="form-label">Message</label>
+          <textarea
+            name="description"
+            id="description"
+            cols="35"
+            rows="4"
+            class="form-control"
+          ></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary" id="myButton">
+            Send Message
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

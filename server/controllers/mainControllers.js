@@ -33,53 +33,20 @@ module.exports = homepage;
 //     const recipeModel = mongoose.model("recipe");
 //     await recipeModel.insertMany([
 //       {
-//         name: "Pumpkin Pickle ",
-//         description: `Cut the skin of the pumpkin and cut the pumpkin in small pieces.Heat the pan, add the oil and also add Fenugreek seed, and thyme seed.When they turn golden brown add chilies.Then Add the pumpkin, turmeric and salt and finally cover the pan and let it cook until pumpkin is well cooked.Now add lemon juice`,
-
+//         name: "Dak Galbi",
+//         description: `Combine all the marinade ingredients in a bowl and mix them well. Pour the sauce over the chopped chicken and marinate for at least 30 mins. (Though I strongly recommend marinating it for at least 4 hrs, and if you can afford more time, for overnight for better flavored chicken. However if you are really short of time, 30 mins is OK.Preheat a large skillet on medium high heat and once heated add some cooking oil. Put all the vegetables and rice cakes into the skillet and add the meat on top. Cook them on medium high heat for 3-4 mins. Then reduce the heat to medium to medium low and cook further until all is cooked (about 10 – 15 mins). During cooking, stir often to avoid food sticking onto the pan. You can cover with a lid to speed up the cooking process`,
 //         ingredients: [
-//           "Yellow pumpkin -200 gram",
-//           "Fenugreek seed- ½ tea spoon",
-//           "Thyme seed- ½ teaspoon",
-//           "Green chilies -3",
-//           "Salt- to taste",
-//           "Turmeric- ½ teaspoon",
-//           "Red chili powder- 1 teaspoon (or as desired)",
-//           "Lemon -1 (if you have chook Amilo is the best)",
-//           "Oil -2 tablespoon",
+//           "500g /1.1 pounds chicken thigh fillets (you can use a whole chicken or chicken breast instead)",
+//           "1/2 medium sweet potato (180g/6.3 ounces)",
+//           "1/2 small carrot (60g/2.1 ounces)",
+//           "1/4 small cabbage (320g/0.7 pounds)",
+//           "10 Korean perilla leaves (35g/1.2 ounces)",
+//           "18 fresh Korean rice cakes pieces (175g/ 6.1 ounces)",
 //         ],
-//         category: "Nepalese",
-//         image: "Farsi-ko-achar.jpg",
+//         category: "Korean",
+//         image: "dak-galbi.jpg",
 //       },
-//       {
-//         name: "Chinese steak & tofu stew ",
-//         description: `Get your prep done first, for smooth cooking. Chop the steak into 1cm chunks, trimming away and discarding any fat.Peel and finely chop the garlic and ginger and slice the chilli. Trim the spring onions, finely slice the top green halves and put aside, then chop the whites into 2cm chunks. Peel the carrots and mooli or radishes, and chop to a similar size.Place a large pan on a medium-high heat and toast the Szechuan peppercorns while it heats up. Tip into a pestle and mortar, leaving the pan on the heat.Place the chopped steak in the pan with 1 tablespoon of groundnut oil. Stir until starting to brown, then add the garlic, ginger, chilli, the white spring onions, carrots and mooli or radishes.
-
-//         Cook for 5 minutes, stirring regularly, then stir in the chilli bean paste for 30 seconds until dark. Pour in the stock and simmer for 10 minutes.Meanwhile, drain the beans, put them into a pan with the rice and a pinch of sea salt, and cover by 1cm with cold water. Place on a high heat, bring to the boil, then simmer until the water level meets the rice. Cover and leave on the lowest heat for 12 minutes, or until cooked through, stirring occasionally.Taste the stew and season to perfection. Mix the cornflour with 2 tablespoons of cold water until combined, then stir into the stew.
-
-//         Trim and stir in the broccoli. Chop the tofu into 2cm chunks and drop them in, then pop a lid on and keep on a low heat for 5 to 8 minutes while the stew thickens up and the broccoli just cooks through.Serve the stew scattered with the sliced green spring onions, with the sticky rice and beans on the side. Finely crush and scatter over some Szechuan pepper. Nice with drips of chilli oil, to taste.`,
-
-//         ingredients: [
-//           "250g rump or sirloin steak",
-//           "2 cloves of garlic",
-//           "4cm piece of ginger",
-//           "2 fresh red chilli",
-//           "1 bunch of spring onions",
-//           "2 large carrots",
-//           "250g mooli or radishes",
-//           "1 heaped teaspoon Szechuan peppercorns",
-//           "groundnut oil",
-//           "2 tablespoons Chinese chilli bean paste",
-//           "1 litre veg stock",
-//           "1 x 400g tin of aduki beans",
-//           "250g pudding or risotto rice",
-//           "1 tablespoon cornflour",
-//           "200g tenderstem broccoli",
-//           "350g firm silken tofu",
-//         ],
-//         category: "Chinese",
-//         image: "chinese-steak.jpg",
-//       },
-// ]);
+//     ]);
 //   } catch (e) {
 //     console.log("Failed to insert data", e.message);
 //   }
