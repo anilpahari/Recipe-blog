@@ -33,19 +33,23 @@ module.exports = homepage;
 //     const recipeModel = mongoose.model("recipe");
 //     await recipeModel.insertMany([
 //       {
-//         name: "Dak Galbi",
-//         description: `Combine all the marinade ingredients in a bowl and mix them well. Pour the sauce over the chopped chicken and marinate for at least 30 mins. (Though I strongly recommend marinating it for at least 4 hrs, and if you can afford more time, for overnight for better flavored chicken. However if you are really short of time, 30 mins is OK.Preheat a large skillet on medium high heat and once heated add some cooking oil. Put all the vegetables and rice cakes into the skillet and add the meat on top. Cook them on medium high heat for 3-4 mins. Then reduce the heat to medium to medium low and cook further until all is cooked (about 10 – 15 mins). During cooking, stir often to avoid food sticking onto the pan. You can cover with a lid to speed up the cooking process`,
+//         name: "Panner butter masala",
+//         description: `This Paneer Butter Masala recipe is a rich and creamy dish of paneer (Indian cottage cheese) in a tomato, butter and cashew sauce that is known here as “makhani gravy.” The acidity of the tomatoes and the sweetness of the cream make for a velvety, nearly addictive sauce.
+//         Soak 18 to 20 cashews in ⅓ cup hot water for 20 to 30 minutes. While the cashews are soaking, you can prep the other ingredients. It’s time for chopping tomatoes, chopping and preparing the ginger-garlic paste, and slicing paneer into cubes.To make the ginger garlic paste, crush a 1 inch piece of peeled ginger with 3 to 4 small to medium-sized garlic cloves in a mortar & pestle. Continue crushing until it is a semi-fine or fine paste. Keep aside. After 20 to 30 minutes, drain the water and add the soaked cashews to a blender or mixer-grinder.Also, add 2 to 3 tablespoons fresh water (or as much as is required to blend to a fine paste).
+// Blend to a smooth paste without any tiny bits or chunks of cashews. Remove the cashew paste from the blender and set it aside.In the same blender, add 2 cups of diced or roughly chopped tomatoes.Blend to a smooth tomato puree. Set aside.
+// Note: Don’t add any water while blending the tomatoes.`,
 //         ingredients: [
-//           "500g /1.1 pounds chicken thigh fillets (you can use a whole chicken or chicken breast instead)",
-//           "1/2 medium sweet potato (180g/6.3 ounces)",
-//           "1/2 small carrot (60g/2.1 ounces)",
-//           "1/4 small cabbage (320g/0.7 pounds)",
-//           "10 Korean perilla leaves (35g/1.2 ounces)",
-//           "18 fresh Korean rice cakes pieces (175g/ 6.1 ounces)",
+//           "Ripe, red & juicy tomatoes",
+//           "Raw Cashews",
+//           "Butter",
+//           "Cream",
+//           "Paneer",
+//           "Spices & Herbs",
 //         ],
-//         category: "Korean",
-//         image: "dak-galbi.jpg",
+//         category: "Indian",
+//         image: "paneer-butter-masala.jpg",
 //       },
+
 //     ]);
 //   } catch (e) {
 //     console.log("Failed to insert data", e.message);
