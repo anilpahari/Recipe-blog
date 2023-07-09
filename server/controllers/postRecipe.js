@@ -1,9 +1,11 @@
+require("express-fileupload");
 const recipeModel = require("../models/recipeModel");
 const postRecipe = async (req, res) => {
   try {
     let imageUplodeFile;
-    let newImageName;
     let uploadPath;
+    let newImageName;
+
     if (!req.files || Object.keys(req.files).length === 0) {
       console.log("No files where uploaded.");
     } else {
