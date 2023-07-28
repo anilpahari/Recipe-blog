@@ -33,23 +33,20 @@ module.exports = homepage;
 //     const recipeModel = mongoose.model("recipe");
 //     await recipeModel.insertMany([
 //       {
-//         name: "Panner butter masala",
-//         description: `This Paneer Butter Masala recipe is a rich and creamy dish of paneer (Indian cottage cheese) in a tomato, butter and cashew sauce that is known here as “makhani gravy.” The acidity of the tomatoes and the sweetness of the cream make for a velvety, nearly addictive sauce.
-//         Soak 18 to 20 cashews in ⅓ cup hot water for 20 to 30 minutes. While the cashews are soaking, you can prep the other ingredients. It’s time for chopping tomatoes, chopping and preparing the ginger-garlic paste, and slicing paneer into cubes.To make the ginger garlic paste, crush a 1 inch piece of peeled ginger with 3 to 4 small to medium-sized garlic cloves in a mortar & pestle. Continue crushing until it is a semi-fine or fine paste. Keep aside. After 20 to 30 minutes, drain the water and add the soaked cashews to a blender or mixer-grinder.Also, add 2 to 3 tablespoons fresh water (or as much as is required to blend to a fine paste).
-// Blend to a smooth paste without any tiny bits or chunks of cashews. Remove the cashew paste from the blender and set it aside.In the same blender, add 2 cups of diced or roughly chopped tomatoes.Blend to a smooth tomato puree. Set aside.
-// Note: Don’t add any water while blending the tomatoes.`,
+//         name: "Chilli Cheap",
+//         description: `First, take raw soya chaap and boil it. Cut it into pieces and deep fry.Next, add oil, ginger-garlic paste, and dry red chilli to a pan. Mix it well.Then add chopped onion and capsicum. Stir it, and add soy sauce, red chilli sauce, schezwan sauce, vinegar and some water. Let it come to a boil.Now throw in the chaap pieces and combine.Now, in a small bowl, add cornflour and water to make a slurry.Throw this in a pan and let it boil. Once done, take it out and serve!`,
 //         ingredients: [
-//           "Ripe, red & juicy tomatoes",
-//           "Raw Cashews",
-//           "Butter",
-//           "Cream",
-//           "Paneer",
-//           "Spices & Herbs",
+//           "5-6 Soya Chaap",
+//           "1 tbsp Ginger-garlic paste",
+//           "1 Dry red chilli1 medium Chopped onion",
+//           "1 small Chopped Capsicum",
+//           "1 tsp Soya Sauce1 tsp Red chilli sauce",
+//           "1 tsp Schezwan sauce",
+//           "1 and a half tsp Vinegar",
 //         ],
-//         category: "Indian",
-//         image: "paneer-butter-masala.jpg",
+//         category: "Chinese",
+//         image: "chilli_cheap.jpg",
 //       },
-
 //     ]);
 //   } catch (e) {
 //     console.log("Failed to insert data", e.message);
